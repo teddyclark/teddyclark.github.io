@@ -5,20 +5,33 @@ import { Navigation } from "../components/navigation";
 export const Root = () => {
   return (
     <PageContainer>
-      <div>
-        <h1>Root</h1>
+      <ContentContainer>
         <Navigation />
-      </div>
-      <div>
-        <Outlet />
-      </div>
+
+        <div style={{ paddingTop: "48px" }}>
+          <Outlet />
+        </div>
+      </ContentContainer>
     </PageContainer>
   );
 };
 
 const PageContainer = styled.div`
-  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #0e2115;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+
+  color: #fffef5;
+`;
+
+const ContentContainer = styled.div`
+  width: 80%;
+  max-width: 850px;
+  align-items: center;
+  justify-content: center;
 `;

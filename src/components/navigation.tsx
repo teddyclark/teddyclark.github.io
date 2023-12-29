@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Navigation = () => {
@@ -6,33 +6,56 @@ export const Navigation = () => {
     <NavigationContainer>
       <NavigationList>
         <NavigationItem>
-          <NavLink to="/">Home</NavLink>
+          <NavigationLink path="/" title="About" />
         </NavigationItem>
 
         <NavigationItem>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavigationLink path="/projects" title="Projects" />
         </NavigationItem>
       </NavigationList>
     </NavigationContainer>
   );
 };
 
+export const NavigationLink = ({
+  title,
+  path,
+}: {
+  title: string;
+  path: string;
+}) => {
+  return (
+    <NavLink
+      to={path}
+      style={({ isActive, isPending }) => {
+        return {
+          color: isPending ? "#59de8c" : "#fffef5",
+          textDecoration: isActive ? "underline" : "none",
+        };
+      }}
+    >
+      {title}
+    </NavLink>
+  );
+};
+
 const NavigationContainer = styled.nav`
   display: flex;
+  justify-content: flex-end;
+  font-family: "IBMPlexMono-Bold", monospace;
+  font-size: 20px;
+
+  padding-top: 24px;
+  padding-right: 10%;
 `;
 
 const NavigationList = styled.ul`
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 24px;
 `;
 
 const NavigationItem = styled.li`
   list-style: none;
   text-decoration: none;
-`;
-
-const NavLink = styled(Link)`
-  text-decoration: none;
-  color: black;
 `;
