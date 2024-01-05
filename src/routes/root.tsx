@@ -21,10 +21,15 @@ const PageContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  background-color: #0e2115;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 33, 21, 1) 25%,
+    rgba(27, 88, 57, 1) 100%
+  );
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   color: #fffef5;
 `;
@@ -34,4 +39,5 @@ const ContentContainer = styled.div`
   max-width: 850px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 128px;
 `;

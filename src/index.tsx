@@ -8,6 +8,7 @@ import { Root } from "./routes/root";
 
 import { ErrorPage } from "./pages/error-page";
 import { HomePage } from "./pages/home-page";
+import { ProjectsPage } from "./pages/projects-page";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <div>Hello World</div>,
+        element: <ProjectsPage />,
       },
     ],
     errorElement: <ErrorPage />,
