@@ -23,5 +23,10 @@ export const Header3 = styled.h3`
   font-family: "IBMPlexMono-Bold", monospace;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+`;
+
+export const TextLink = styled.a`
+  color: #fffef5;
+  text-decoration: underline;
 `;
