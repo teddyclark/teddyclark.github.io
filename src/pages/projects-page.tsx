@@ -141,6 +141,11 @@ const ProjectsContainer = styled.div`
   flex-direction: column;
   gap: 32px;
   padding-top: 16px;
+
+  @media (max-width: 768px) {
+    padding-top: 0;
+    gap: 48px;
+  }
 `;
 
 const ProjectContainer = styled.div`
@@ -148,6 +153,11 @@ const ProjectContainer = styled.div`
   flex-direction: row;
   align-items: top;
   gap: 24px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0px;
+  }
 `;
 
 const Summary = styled.div`
@@ -155,6 +165,10 @@ const Summary = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 54%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const TextContainer = styled.div`
