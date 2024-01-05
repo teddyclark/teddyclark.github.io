@@ -93,6 +93,10 @@ const SummaryContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 32px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ContactContainer = styled.div`
@@ -105,8 +109,16 @@ const TextContainer = styled.div`
   display: "flex";
   flex-direction: "column";
   width: 54%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const ImageContainer = styled.div`
   padding: 18px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;

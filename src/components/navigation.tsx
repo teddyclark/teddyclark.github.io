@@ -47,6 +47,10 @@ const NavigationContainer = styled.nav`
 
   padding-top: 24px;
   padding-right: 10%;
+
+  @media (max-width: 768px) {
+    padding-right: 12px;
+  }
 `;
 
 const NavigationList = styled.ul`
