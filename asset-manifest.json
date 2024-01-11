@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.93b40ae9.css",
-    "main.js": "/static/js/main.4897aa27.js",
+    "main.js": "/static/js/main.a44c0473.js",
     "static/js/787.0f15b36d.chunk.js": "/static/js/787.0f15b36d.chunk.js",
     "static/media/scream.png": "/static/media/scream.8b691022820938f68d60.png",
+    "static/media/film-search.png": "/static/media/film-search.e664aca545cd69f07bf2.png",
     "static/media/website.png": "/static/media/website.a5e4b84d2e780ff421a0.png",
     "static/media/teddy.jpeg": "/static/media/teddy.f87f0e21ffb5abf3959e.jpeg",
     "static/media/rowinggame.png": "/static/media/rowinggame.962decaae74ac14661be.png",
@@ -12,15 +13,17 @@
     "static/media/c-sharp-svgrepo-com.svg": "/static/media/c-sharp-svgrepo-com.6e60a2d26fb6692e5c7679af5ee8ee1d.svg",
     "static/media/react-svgrepo-com.svg": "/static/media/react-svgrepo-com.f57b349b4d9df56c9b48c916a8d5adfb.svg",
     "static/media/java-svgrepo-com.svg": "/static/media/java-svgrepo-com.ea37baa6a1d1a1d45345798657d7d092.svg",
+    "static/media/tmdb-logo.svg": "/static/media/tmdb-logo.bf7f470b3821af1da7fa249c87dadea3.svg",
+    "static/media/chatgpt.svg": "/static/media/chatgpt.2e0dbecb5b5da9799143592f40ecb576.svg",
     "static/media/typescript-official-svgrepo-com.svg": "/static/media/typescript-official-svgrepo-com.3ca8a525abd0f8887aae0089dc4ed25c.svg",
     "index.html": "/index.html",
     "static/media/unity-svgrepo-com.svg": "/static/media/unity-svgrepo-com.c40fad8d657e7066ee01964c4127bb9b.svg",
     "main.93b40ae9.css.map": "/static/css/main.93b40ae9.css.map",
-    "main.4897aa27.js.map": "/static/js/main.4897aa27.js.map",
+    "main.a44c0473.js.map": "/static/js/main.a44c0473.js.map",
     "787.0f15b36d.chunk.js.map": "/static/js/787.0f15b36d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93b40ae9.css",
-    "static/js/main.4897aa27.js"
+    "static/js/main.a44c0473.js"
   ]
 }
