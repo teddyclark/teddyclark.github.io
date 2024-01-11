@@ -3,6 +3,7 @@ import { Header1, Header3, Text, TextLink } from "../components/text";
 import { Image } from "../components/image";
 
 import scream from "../images/scream.png";
+import film_search from "../images/film-search.png";
 import rowingGame from "../images/rowinggame.png";
 import website from "../images/website.png";
 import java from "../images/java-svgrepo-com.svg";
@@ -10,6 +11,8 @@ import unity from "../images/unity-svgrepo-com.svg";
 import react from "../images/react-svgrepo-com.svg";
 import typescript from "../images/typescript-official-svgrepo-com.svg";
 import csharp from "../images/c-sharp-svgrepo-com.svg";
+import chatgpt from "../images/chatgpt.svg";
+import tmdb_logo from "../images/tmdb-logo.svg";
 
 import { ReactNode, useEffect } from "react";
 
@@ -23,6 +26,30 @@ export const ProjectsPage = () => {
       <Header1>Projects</Header1>
 
       <ProjectsContainer>
+        <Project
+          imageSrc={film_search}
+          imageAlt="film mood search"
+          title="Film Mood Search"
+          logos={[react, typescript, chatgpt, tmdb_logo]}
+          description={
+            <>
+              <Text>
+                A webapp that gives movie recommendations based off of whatever
+                the user is currently in the mood for. A potential query could
+                be "chemistry, confusing, romantic." Uses APIs from OpenAI and
+                the TMDb movie database. View the code on{" "}
+                <TextLink
+                  href="https://github.com/teddyclark/film-vibe-search"
+                  target="_blank"
+                >
+                  GitHub
+                </TextLink>
+                .
+              </Text>
+            </>
+          }
+        />
+
         <Project
           imageSrc={scream}
           imageAlt="vr interactive museum"
@@ -127,9 +154,19 @@ export const Project = ({
         </TextContainer>
 
         <LogoRow>
-          {logos.map((logo) => (
-            <Logo src={logo} alt={logo} />
-          ))}
+          {logos.map((logo) => {
+            if (logo === tmdb_logo) {
+              return (
+                <Logo
+                  src={logo}
+                  alt={logo}
+                  style={{ width: "64px", height: "32px" }}
+                />
+              );
+            }
+
+            return <Logo src={logo} alt={logo} />;
+          })}
         </LogoRow>
       </Summary>
     </ProjectContainer>
