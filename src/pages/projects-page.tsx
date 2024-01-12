@@ -34,15 +34,21 @@ export const ProjectsPage = () => {
           description={
             <>
               <Text>
-                A webapp that gives movie recommendations based off of whatever
-                the user is currently in the mood for. A potential query could
-                be "chemistry, confusing, romantic." Uses APIs from OpenAI and
+                A web app that gives movie recommendations based off of whatever
+                the user is currently in the mood for. Uses APIs from OpenAI and
                 the TMDb movie database. View the code on{" "}
                 <TextLink
                   href="https://github.com/teddyclark/film-vibe-search"
                   target="_blank"
                 >
                   GitHub
+                </TextLink>
+                , and visit the web app{" "}
+                <TextLink
+                  href="https://film-vibe-search.vercel.app/"
+                  target="_blank"
+                >
+                  here
                 </TextLink>
                 .
               </Text>
