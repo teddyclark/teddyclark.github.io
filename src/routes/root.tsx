@@ -23,8 +23,8 @@ const PageContainer = styled.div`
 
   background: linear-gradient(
     180deg,
-    rgba(14, 33, 21, 1) 25%,
-    rgba(27, 88, 57, 1) 100%
+    rgba(5, 15, 30, 1) 25%,
+    rgba(17, 34, 64, 1) 100%
   );
   height: 100vh;
   width: 100vw;

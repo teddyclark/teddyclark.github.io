@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import teddy from "../images/teddy.jpeg";
+import teddy from "../images/teddy.jpg";
 import { Header1, Header3, Text, TextLink } from "../components/text";
 import { Image } from "../components/image";
 import { TypeAnimation } from "react-type-animation";
@@ -40,13 +40,8 @@ export const HomePage = () => {
       <SummaryContainer>
         <TextContainer>
           <Text>
-            I'm a software engineer based in New York City, and I'm looking for
-            a new role in 2024.
-          </Text>
-
-          <Text>
-            I have 2 years of experience at Bolt, where I helped build and scale
-            Bolt's checkout product using React, TypeScript, and GoLang.
+            I'm a software engineer based in New York City, and I currently work
+            at Stripe.
           </Text>
 
           <Text>
